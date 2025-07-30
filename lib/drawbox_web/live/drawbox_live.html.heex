@@ -1,0 +1,16 @@
+<h1>Hi!</h1>
+
+<p>Click in a shape to add it</p>
+
+<ul>
+<li><button type="button" phx-click="add_shape" value="square">Square</button></li>
+<li><button type="button" phx-click="add_shape" value="circle">Circle</button></li>
+<li><button type="button" phx-click="add_shape" value="line">Line</button></li>
+<li><button type="button" phx-click="add_shape" value="star">Star</button></li>
+</ul>
+
+<hr />
+
+<p>Current Shapes</p>
+
+<.draw_shapes shapes={@shapes}/>
